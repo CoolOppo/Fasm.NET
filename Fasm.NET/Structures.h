@@ -34,7 +34,7 @@ namespace Binarysharp {
 			/// the macro_line field contains the pointer to LINE_HEADER structure for the
 			/// line within the definition of macroinstruction, which generated this one.
 			/// </summary>
-			typedef struct NativeLineHeader
+			struct NativeLineHeader
 			{
 				char* FilePath;
 				int LineNumber;
@@ -61,7 +61,7 @@ namespace Binarysharp {
 			/// LINE_HEADER structure, providing information about the line that caused
 			/// the error.
 			/// </summary>
-			typedef struct NativeFasmState
+			struct NativeFasmState
 			{
 				FasmResults Condition;
 				union
